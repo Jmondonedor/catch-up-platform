@@ -31,7 +31,6 @@
       <Folder Include="News\Domain\" />
       <Folder Include="News\Infrastructure\" />
       <Folder Include="News\Interfaces\" />
-      <Folder Include="Shared\Infrastructure\Persistence\EFC\Configuration\Extensions\" />
       <Folder Include="Shared\Infrastructure\Persistence\EFC\Repositories\" />
     </ItemGroup>
 
