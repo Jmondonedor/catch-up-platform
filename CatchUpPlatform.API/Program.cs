@@ -33,6 +33,14 @@ else if (builder.Environment.IsProduction())
 
 var app = builder.Build();
 
+// Verify Database Objects are created
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AppDbContext>();
+    context.Database.EnsureCreated();
+}
+
 app.UseHttpsRedirection();
 
 app.Run();
