@@ -28,7 +28,6 @@
 
     <ItemGroup>
       <Folder Include="News\Application\" />
-      <Folder Include="News\Domain\" />
       <Folder Include="News\Infrastructure\" />
       <Folder Include="News\Interfaces\" />
       <Folder Include="Shared\Infrastructure\Persistence\EFC\Repositories\" />

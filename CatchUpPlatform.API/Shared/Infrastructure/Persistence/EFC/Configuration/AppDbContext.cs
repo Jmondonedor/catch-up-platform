@@ -1,3 +1,4 @@
+using CatchUpPlatform.API.News.Domain.Model.Aggregates;
 using CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -12,12 +13,15 @@ public class AppDbContext(DbContextOptions options) : DbContext
         base.OnConfiguring(optionsBuilder);
     }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        base.OnModelCreating(modelBuilder);
+        base.OnModelCreating(builder);
 
-        // DEEFINICION DE CREACION DE LAS ENTIDADES, AGGREGATES
+        builder.Entity<FavoriteSource>().HasKey(f => f.Id);
+        builder.Entity<FavoriteSource>().Property(f => f.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<FavoriteSource>().Property(f => f.NewsApiKey).IsRequired();
+        builder.Entity<FavoriteSource>().Property(f => f.SourceId).IsRequired();
         
-        modelBuilder.UseSnakeCaseNamingConvention();
+        builder.UseSnakeCaseNamingConvention();
     }
 }
