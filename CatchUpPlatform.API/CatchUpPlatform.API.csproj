@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="News\Application\" />
+      <Folder Include="News\Domain\" />
+      <Folder Include="News\Infrastructure\" />
+      <Folder Include="News\Interfaces\" />
+      <Folder Include="Shared\Infrastructure\Persistence\EFC\Configuration\Extensions\" />
+      <Folder Include="Shared\Infrastructure\Persistence\EFC\Repositories\" />
+    </ItemGroup>
+
+</Project>
