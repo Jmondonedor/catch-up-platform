@@ -12,6 +12,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// Configure Lower Case URLs
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+// Configure Controllers - KEBAB CASE
+builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options => options.EnableAnnotations());
 

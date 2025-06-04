@@ -27,7 +27,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="News\Interfaces\" />
       <Folder Include="Shared\Infrastructure\" />
     </ItemGroup>
 
