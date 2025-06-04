@@ -1,13 +1,24 @@
+using CatchUpPlatform.API.News.Application.Internal.CommandServices;
+using CatchUpPlatform.API.News.Application.Internal.QueryServices;
+using CatchUpPlatform.API.News.Domain.Repositories;
+using CatchUpPlatform.API.News.Domain.Services;
+using CatchUpPlatform.API.News.Infrastructure.Repositories;
+using CatchUpPlatform.API.Shared.Domain.Repositories;
 using CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
 // Add Database Connection
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Verify Database Connection string
+// Verify Database Connection String
 if (connectionString is null)
-    throw new Exception("Database connection string is not set");
+    // Stop the application if the connection string is not set.
+    throw new Exception("Database connection string is not set.");
 
 // Configure Database Context and Logging Levels
 if (builder.Environment.IsDevelopment())
@@ -18,8 +29,7 @@ if (builder.Environment.IsDevelopment())
                 .LogTo(Console.WriteLine, LogLevel.Information)
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors();
-        }
-    );
+        });
 else if (builder.Environment.IsProduction())
     builder.Services.AddDbContext<AppDbContext>(
         options =>
@@ -27,9 +37,17 @@ else if (builder.Environment.IsProduction())
             options.UseMySQL(connectionString)
                 .LogTo(Console.WriteLine, LogLevel.Error)
                 .EnableDetailedErrors();
-        }
-    );
-    
+        });
+
+// Configure Dependency Injection
+
+// Shared Bounded Context Injection Configuration
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// News Bounded Context Injection Configuration
+builder.Services.AddScoped<IFavoriteSourceRepository, FavoriteSourceRepository>();
+builder.Services.AddScoped<IFavoriteSourceCommandService, FavoriteSourceCommandService>();
+builder.Services.AddScoped<IFavoriteSourceQueryService, FavoriteSourceQueryService>();
 
 var app = builder.Build();
 
@@ -41,6 +59,12 @@ using (var scope = app.Services.CreateScope())
     context.Database.EnsureCreated();
 }
 
+// Configure the HTTP request pipeline.
+
 app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();
