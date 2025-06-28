@@ -11,7 +11,6 @@ namespace pc24374u202110373.API.Assessment.Infrastructure.Repositories;
 /// </summary>
 /// <remarks>
 /// This class implements the cognitive assessment order repository operations.
-/// Author: [Tu Nombre y Apellidos]
 /// </remarks>
 /// <param name="context">The application database context</param>
 public class CognitiveAssessmentOrderRepository(AppDbContext context)
