@@ -1,7 +1,7 @@
-using CatchUpPlatform.API.Shared.Domain.Repositories;
-using CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using pc24374u202110373.API.Shared.Domain.Repositories;
+using pc24374u202110373.API.Shared.Infrastructure.Persistence.EFC.Configuration;
 
-namespace CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace pc24374u202110373.API.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 /// <summary>
 ///     Unit of work implementation

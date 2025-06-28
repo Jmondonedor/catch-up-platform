@@ -1,8 +1,8 @@
-using CatchUpPlatform.API.Shared.Domain.Repositories;
-using CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using pc24374u202110373.API.Shared.Domain.Repositories;
+using pc24374u202110373.API.Shared.Infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace pc24374u202110373.API.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 /// <summary>
 ///     Base repository for all repositories

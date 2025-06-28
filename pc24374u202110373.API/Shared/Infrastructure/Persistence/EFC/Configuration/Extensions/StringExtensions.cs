@@ -1,6 +1,6 @@
 using Humanizer;
 
-namespace CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+namespace pc24374u202110373.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
 /// <summary>
 ///     String extensions

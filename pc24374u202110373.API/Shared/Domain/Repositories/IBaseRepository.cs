@@ -1,4 +1,4 @@
-namespace CatchUpPlatform.API.Shared.Domain.Repositories;
+namespace pc24374u202110373.API.Shared.Domain.Repositories;
 
 /// <summary>
 ///     Base repository interface for all repositories
