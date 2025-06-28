@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchUpPlatform.API", "CatchUpPlatform.API\CatchUpPlatform.API.csproj", "{024F1DC7-5812-4E8C-B401-1AE09CDACC74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc24374u202110373.API", "pc24374u202110373.API\pc24374u202110373.API.csproj", "{024F1DC7-5812-4E8C-B401-1AE09CDACC74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
