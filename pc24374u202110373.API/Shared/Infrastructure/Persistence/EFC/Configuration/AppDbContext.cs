@@ -33,24 +33,20 @@ public class AppDbContext(DbContextOptions options) : DbContext(options), IUnitO
 
         builder.Entity<CognitiveAssessmentOrder>(entity =>
         {
-            // Configure primary key
             entity.HasKey(e => e.AssessmentOrderId);
-
-            // Configure AssessmentOrderId value object
+            entity.ToTable("cognitive_assessment_orders", "neurolink");
             entity.Property(e => e.AssessmentOrderId)
                 .HasConversion(
                     v => v.Value,
                     v => new CognitiveAssessmentOrderId(v))
                 .HasColumnName("id");
 
-            // Configure PatientId value object
             entity.Property(e => e.PatientId)
                 .HasConversion(
                     v => v.Value,
                     v => new PatientId(v))
                 .HasColumnName("patient_id");
 
-            // Configure other properties
             entity.Property(e => e.SessionCount)
                 .IsRequired()
                 .HasColumnName("session_count");
@@ -64,7 +60,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options), IUnitO
                 .HasConversion<string>()
                 .HasColumnName("assessment_status");
 
-            // Configure CognitiveCriteria owned entity using Fluent API
             entity.OwnsOne(e => e.CognitiveCriteria, cognitiveCriteria =>
             {
                 cognitiveCriteria.Property(c => c.AttentionThreshold)
@@ -78,7 +73,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options), IUnitO
                     .HasColumnName("processing_speed_threshold");
             });
 
-            // Configure audit properties
             entity.Property(e => e.CreatedDate).HasColumnName("created_at");
             entity.Property(e => e.UpdatedDate).HasColumnName("updated_at");
         });
