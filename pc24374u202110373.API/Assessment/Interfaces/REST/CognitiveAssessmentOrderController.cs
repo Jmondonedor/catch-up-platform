@@ -4,6 +4,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using pc24374u202110373.API.Assessment.Domain.Services;
 using pc24374u202110373.API.Assessment.Interfaces.REST.Resources;
 using pc24374u202110373.API.Assessment.Interfaces.REST.Transform;
+using pc24374u202110373.API.Assessment.Domain.Model.Queries;
 
 namespace pc24374u202110373.API.Assessment.Interfaces.REST;
 
