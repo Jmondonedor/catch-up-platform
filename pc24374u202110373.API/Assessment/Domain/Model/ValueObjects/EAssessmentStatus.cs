@@ -4,7 +4,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.ValueObjects;
 /// Assessment Status Enumeration
 /// </summary>
 /// <remarks>
-/// This enumeration represents the possible states of a cognitive assessment order.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public enum EAssessmentStatus
 {

@@ -6,7 +6,7 @@ namespace pc24374u202110373.API.Assessment.Interfaces.REST.Resources;
 /// Cognitive Assessment Order Resource
 /// </summary>
 /// <remarks>
-/// This resource represents the cognitive assessment order data for API responses.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 /// <param name="AssessmentOrderId">The cognitive assessment order identifier</param>
 /// <param name="PatientId">The patient identifier</param>

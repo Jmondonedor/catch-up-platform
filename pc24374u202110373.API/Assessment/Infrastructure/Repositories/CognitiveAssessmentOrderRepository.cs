@@ -10,7 +10,7 @@ namespace pc24374u202110373.API.Assessment.Infrastructure.Repositories;
 /// Cognitive Assessment Order Repository Implementation
 /// </summary>
 /// <remarks>
-/// This class implements the cognitive assessment order repository operations.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 /// <param name="context">The application database context</param>
 public class CognitiveAssessmentOrderRepository(AppDbContext context)

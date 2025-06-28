@@ -8,7 +8,7 @@ namespace pc24374u202110373.API.Assessment.Interfaces.REST.Transform;
 /// Create Cognitive Assessment Order Command From Resource Assembler
 /// </summary>
 /// <remarks>
-/// This assembler transforms create cognitive assessment order resources into commands.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public static class CreateCognitiveAssessmentOrderCommandFromResourceAssembler
 {

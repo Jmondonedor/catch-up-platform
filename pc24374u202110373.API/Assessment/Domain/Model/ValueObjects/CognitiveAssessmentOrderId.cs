@@ -4,8 +4,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.ValueObjects;
 /// Cognitive Assessment Order Identifier Value Object
 /// </summary>
 /// <remarks>
-/// This value object represents the unique identifier for a cognitive assessment order.
-/// It is automatically generated as a GUID.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public record CognitiveAssessmentOrderId
 {

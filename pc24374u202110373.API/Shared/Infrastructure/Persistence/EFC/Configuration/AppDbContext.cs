@@ -11,7 +11,7 @@ namespace pc24374u202110373.API.Shared.Infrastructure.Persistence.EFC.Configurat
 /// Application Database Context
 /// </summary>
 /// <remarks>
-/// This class represents the database context for the NeuroLink HealthTech application.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 /// <param name="options">The database context options</param>
 public class AppDbContext(DbContextOptions options) : DbContext(options), IUnitOfWork

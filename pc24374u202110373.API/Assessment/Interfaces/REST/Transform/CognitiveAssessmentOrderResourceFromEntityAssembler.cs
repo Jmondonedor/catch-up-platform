@@ -7,7 +7,7 @@ namespace pc24374u202110373.API.Assessment.Interfaces.REST.Transform;
 /// Cognitive Assessment Order Resource From Entity Assembler
 /// </summary>
 /// <remarks>
-/// This assembler transforms cognitive assessment order entities into resources.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public static class CognitiveAssessmentOrderResourceFromEntityAssembler
 {

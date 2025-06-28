@@ -11,7 +11,7 @@ namespace pc24374u202110373.API.Assessment.Interfaces.REST;
 /// Cognitive Assessment Order REST Controller
 /// </summary>
 /// <remarks>
-/// This controller handles HTTP requests for cognitive assessment order operations.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 /// <param name="cognitiveAssessmentOrderCommandService">The cognitive assessment order command service</param>
 /// <param name="cognitiveAssessmentOrderQueryService">The cognitive assessment order query service</param>

@@ -4,8 +4,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.ValueObjects;
 /// Patient Identifier Value Object
 /// </summary>
 /// <remarks>
-/// This value object represents a patient identifier.
-/// It must be a positive long value greater than zero.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public record PatientId
 {

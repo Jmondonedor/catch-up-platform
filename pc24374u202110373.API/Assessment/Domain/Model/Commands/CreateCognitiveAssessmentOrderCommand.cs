@@ -6,7 +6,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.Commands;
 /// Command to create a cognitive assessment order
 /// </summary>
 /// <remarks>
-/// This command contains all the necessary information to create a new cognitive assessment order.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 /// <param name="PatientId">The patient identifier</param>
 /// <param name="SessionCount">The number of sessions</param>

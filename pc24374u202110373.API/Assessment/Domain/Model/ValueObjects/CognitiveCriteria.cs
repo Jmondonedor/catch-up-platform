@@ -4,8 +4,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.ValueObjects;
 /// Cognitive Criteria Value Object
 /// </summary>
 /// <remarks>
-/// This value object represents the cognitive criteria thresholds for an assessment.
-/// All threshold values must be greater than zero.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public record CognitiveCriteria
 {

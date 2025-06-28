@@ -6,7 +6,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.Queries;
 /// Query to get a cognitive assessment order by its identifier
 /// </summary>
 /// <remarks>
-/// This query retrieves a cognitive assessment order using its unique identifier.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 /// <param name="AssessmentOrderId">The cognitive assessment order identifier</param>
 public record GetCognitiveAssessmentOrderByIdQuery(Guid AssessmentOrderId);

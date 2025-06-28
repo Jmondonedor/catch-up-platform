@@ -7,7 +7,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Repositories;
 /// Cognitive Assessment Order Repository Interface
 /// </summary>
 /// <remarks>
-/// This interface defines the contract for cognitive assessment order repository operations.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public interface ICognitiveAssessmentOrderRepository : IBaseRepository<CognitiveAssessmentOrder>
 {

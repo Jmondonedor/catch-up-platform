@@ -7,7 +7,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Services;
 /// Cognitive Assessment Order Query Service Interface
 /// </summary>
 /// <remarks>
-/// This interface defines the contract for cognitive assessment order query operations.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public interface ICognitiveAssessmentOrderQueryService
 {

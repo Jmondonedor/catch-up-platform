@@ -7,7 +7,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.Aggregates;
 /// Cognitive Assessment Order Aggregate with Audit Properties
 /// </summary>
 /// <remarks>
-/// This partial class adds audit trail capabilities to the CognitiveAssessmentOrder aggregate.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public partial class CognitiveAssessmentOrder : IEntityWithCreatedUpdatedDate
 {

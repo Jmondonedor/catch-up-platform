@@ -7,8 +7,7 @@ namespace pc24374u202110373.API.Assessment.Domain.Model.Aggregates;
 /// Cognitive Assessment Order Aggregate Root
 /// </summary>
 /// <remarks>
-/// This class represents the cognitive assessment order aggregate root.
-/// It contains all the business logic and validation rules for cognitive assessment orders.
+/// Juan Diego Mondoñedo Rodriguez
 /// </remarks>
 public partial class CognitiveAssessmentOrder
 {
